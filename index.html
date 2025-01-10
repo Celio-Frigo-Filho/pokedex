@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="transition">
+        <header>
+            <nav>
+                <a href="index.html" class="nav-links">Pokedex</a>
+                <a href="lista.html" class="nav-links">Pokebox</a>
+            </nav>
+        </header>
+    </div>
+    <div class="1step">
+        <form action="" onsubmit="searchPokemon(event)">
+            <input type="text" name="pokemon" autocomplete="off">
+        </form>
+        <div data-poke-card class="poke-card">
+            <div data-poke-name>Pokedex</div>
+            <div data-poke-img-container class="img-container">
+                <img data-poke-img class="poke-img" src="./misigno.png">
+            </div>
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+        </div>
+    
+        <h1>Obs:alguns pokemons pediram o sexo e o nome da transformação<br>Ex: basculegion-male, Enamorus-Incarnate</h1>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
